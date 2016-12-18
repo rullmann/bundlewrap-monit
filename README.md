@@ -17,7 +17,7 @@ This bundle has been tested on the following systems:
 ## Integrations
 
 * Bundles:
-  * ...
+  * [collectd](https://github.com/rullmann/bundlewrap-collectd)
 
 ## Metadata
 
