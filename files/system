@@ -1,0 +1,22 @@
+###############################################################################
+## System Checks
+###############################################################################
+
+  check system $HOST
+% if node.metadata['monit'].get('load_check', True):
+    if loadavg (1min) > 8 then alert
+    if loadavg (5min) > 6 then alert
+    if loadavg (15min) > 4 then alert
+% endif
+    if cpu usage > 95% for 10 cycles then alert
+    if memory usage > 75% then alert
+    if swap usage > 25% then alert
+
+% if node.metadata['monit'].get('load_check', True):
+% for name, path in sorted(node.metadata.get('disks', {}).items()):
+  check filesystem ${name} with path ${path}
+    if space usage > 95% for 5 times within 15 cycles then alert
+    if inode usage > 80% then alert
+
+% endfor
+% endif
