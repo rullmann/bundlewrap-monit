@@ -18,6 +18,7 @@ This bundle has been tested on the following systems:
 
 * Bundles:
   * [collectd](https://github.com/rullmann/bundlewrap-collectd)
+  * [jenkins](https://github.com/rullmann/bundlewrap-jenkins)
 
 ## Metadata
 
