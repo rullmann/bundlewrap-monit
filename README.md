@@ -19,6 +19,9 @@ This bundle has been tested on the following systems:
 * Bundles:
   * [collectd](https://github.com/rullmann/bundlewrap-collectd)
   * [jenkins](https://github.com/rullmann/bundlewrap-jenkins)
+  * [openssh](https://github.com/rullmann/bundlewrap-openssh)
+  * [php-fpm](https://github.com/rullmann/bundlewrap-php)
+  * [postgresql](https://github.com/rullmann/bundlewrap-postgresql)
 
 ## Metadata
 
