@@ -12,7 +12,7 @@
     if memory usage > 75% then alert
     if swap usage > 25% then alert
 
-% if node.metadata['monit'].get('load_check', True):
+% if node.metadata['monit'].get('disk_check', False):
 % for name, path in sorted(node.metadata.get('disks', {}).items()):
   check filesystem ${name} with path ${path}
     if space usage > 95% for 5 times within 15 cycles then alert
