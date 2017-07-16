@@ -1,0 +1,2 @@
+${node.metadata.get('monit', {}).get('disable_stop_time', '0 2 * * *')} root /usr/bin/systemctl stop monit.service
+${node.metadata.get('monit', {}).get('disable_start_time', '0 3 * * *')} root /usr/bin/systemctl start monit.service

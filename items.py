@@ -38,3 +38,15 @@ files = {
         ],
     },
 }
+
+if node.metadata.get('monit', {}).get('disable_notification_time', False):
+    files['/etc/cron.d/monit'] = {
+        'content_type': 'mako',
+        'source': "crond",
+        'owner': "root",
+        'group': "root",
+        'mode': "0644",
+        'needs': [
+            "pkg_dnf:monit",
+        ]
+    }
