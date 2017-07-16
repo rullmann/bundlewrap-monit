@@ -30,6 +30,8 @@ This bundle has been tested on the following systems:
           'alert_email': 'root@example.org', # optional, if not set alerts are send to `root@localhost`
           'email_from': 'monit@localhost', # optional, but required in a secure mail server setup
           'load_check': True, # optional, True by default. Alerts if load is high
+          'disk_check': False, # optional, False by default. Enable and set disks metadata to enable disk space checks
+          'load_check': True, optional, True by default. Disable for nodes where load checks are annoying
         },
         'disks': { # optional, enable a disk check
             'root': '/',
