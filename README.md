@@ -32,6 +32,9 @@ This bundle has been tested on the following systems:
           'load_check': True, # optional, True by default. Alerts if load is high
           'disk_check': False, # optional, False by default. Enable and set disks metadata to enable disk space checks
           'load_check': True, optional, True by default. Disable for nodes where load checks are annoying
+          'disable_notification_time': False, # optional, False by default. Enable if you want to stop monit at some point of the day, e.g. when backups occur
+          'disable_stop_time': "0 2 * * *", # optional, set to a specific time when monit should be stopped when `disable_notification_time` is set to True
+          'disable_start_time': "0 3 * * *", # optional, set to a specific time when monit should be started again when `disable_notification_time` is set to True
         },
         'disks': { # optional, enable a disk check
             'root': '/',
