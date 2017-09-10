@@ -1,5 +1,5 @@
 set daemon  30
-with start delay 60
+with start delay 120
 
 set pidfile /var/run/monit.pid
 
