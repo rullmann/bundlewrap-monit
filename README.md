@@ -4,6 +4,10 @@
 
 This makes it an easy-to-use alternative to Icinga2 in simple setups.
 
+## Maintenance notice
+
+As of February 2018 this bundle will not be mainained anymore. If you encounter any issues I cannot help.
+
 ## Integrations
 
 * Bundles:
